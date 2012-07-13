@@ -60,8 +60,8 @@ module Dfxml
       element :hashdigest, :as => :sha1, :with => {:type => "sha1"}
       element :hashdigest, :as => :sha256, :with => {:type => "sha256"}
       # elements from fido extractor plugin
-      # element "PUID", :as => :pronom_puid
-      # element "PronomFormat", :as => :pronom_format
+      element "pronomPuid", :as => :pronom_puid
+      element "ronomFormat", :as => :pronom_format
       
       # Begin timestamp methods
       #
