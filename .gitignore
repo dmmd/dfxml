@@ -1,3 +1,4 @@
+/dev/*.xml
 # rcov generated
 coverage
 coverage.data
