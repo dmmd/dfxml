@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml version='1.0'>
+  <metadata 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>fiwalk</program>
+    <version>0.6.16</version>
+    <build_environment>
+      <compiler>GCC 4.2</compiler>
+      <library name="tsk" version="3.2.3"/>
+      <library name="afflib" version="3.7.1"/>
+      <library name="libewf" version="20100226"/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Darwin</os_sysname>
+      <os_release>10.8.0</os_release>
+      <os_version>Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386</os_version>
+      <host>mss-e.local</host>
+      <arch>i386</arch>
+      <command_line>fiwalk -fxc /Volumes/Staging/dgi/ficonfig.txt M1126-0008.001</command_line>
+      <start_time>2012-07-30T14:23:39Z</start_time>
+    </execution_environment>
+  </creator>
+<!-- Reading configuration file /Volumes/Staging/dgi/ficonfig.txt -->
+<!-- pattern: *  method: dgi  path: java -jar /Volumes/Staging/dgi/MssDGI.jar -->
+  <source>
+    <image_filename>M1126-0008.001</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <block_size>512</block_size>
+    <ftype>2</ftype>
+    <ftype_str>fat12</ftype_str>
+    <block_count>1440</block_count>
+    <first_block>0</first_block>
+    <last_block>1439</last_block>
+    <fileobject>
+      <filename>LABELS.WPM</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>17242</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-03-30T17:00:00Z</mtime>
+      <libmagic>(Corel/WP) WordPerfect macro </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='7168' img_offset='7168' len='17242'/>
+      </byte_runs>
+      <hashdigest type='md5'>bbb897bfa123b05db0b1d710dbeb5ab6</hashdigest>
+      <hashdigest type='sha1'>3ab5705a5a8f2e57adec178f306c678ada7dafec</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/204</pronomPuid>
+      <pronomMimeType />
+      <pronomFormat>Microsoft Word for Windows Macro</pronomFormat>
+      <pronomIdentificationMethod>extension</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>$MBR</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>v</name_type>
+      <filesize>512</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>22931</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>DOS floppy 720k, x86 hard disk boot sector </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='512'/>
+      </byte_runs>
+      <hashdigest type='md5'>a0eeddb35d97bf2b12aa3a2a39d94b6b</hashdigest>
+      <hashdigest type='sha1'>2980f5c83361e3136ed06a84a59a54f31ea15748</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>$FAT1</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>v</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>22932</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='512' img_offset='512' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>19ccbc854082b284ee4f086532853b8a</hashdigest>
+      <hashdigest type='sha1'>080726f65bb2c35c3e1ae971b144ad49cd5245eb</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>$FAT2</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>v</name_type>
+      <filesize>1536</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>22933</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='2048' img_offset='2048' len='1536'/>
+      </byte_runs>
+      <hashdigest type='md5'>19ccbc854082b284ee4f086532853b8a</hashdigest>
+      <hashdigest type='sha1'>080726f65bb2c35c3e1ae971b144ad49cd5245eb</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>22934</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>empty </libmagic>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+<!-- clock: 5 -->
+  <runstats>
+    <user_seconds>0</user_seconds>
+    <system_seconds>0</system_seconds>
+    <maxrss>1417216</maxrss>
+    <reclaims>396</reclaims>
+    <faults>111</faults>
+    <swaps>0</swaps>
+    <inputs>0</inputs>
+    <outputs>5</outputs>
+    <stop_time>Mon Jul 30 10:23:43 2012</stop_time>
+  </runstats>
+</dfxml>

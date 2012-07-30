@@ -59,9 +59,12 @@ module Dfxml
       element :hashdigest, :as => :md5, :with => {:type => "md5"}
       element :hashdigest, :as => :sha1, :with => {:type => "sha1"}
       element :hashdigest, :as => :sha256, :with => {:type => "sha256"}
-      # elements from fido extractor plugin
-      # element "PUID", :as => :pronom_puid
-      # element "PronomFormat", :as => :pronom_format
+      # elements from MSS DGI extractor plugin
+      element "pronomPuid", :as => :pronom_puid
+      element "pronomFormat", :as => :pronom_format
+      element "pronomIdentificationMethod", :as => :pronom_identification_method
+      
+      
       
       # Begin timestamp methods
       #
